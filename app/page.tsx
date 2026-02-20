@@ -1,65 +1,147 @@
-import Image from "next/image";
+import Link from "next/link";
+import styles from "./page.module.css";
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
+    <main className={styles.page}>
+      <header className={styles.header}>
+        <div className={styles.nav}>
+          <div className={styles.brand}>
+            <span className={styles.logo} aria-hidden="true" />
+            <span className={styles.brandText}>
+              <span className={styles.brandName}>OSA</span>
+              <span className={styles.brandSub}>ORIGIN STRENGTH ARTS</span>
+            </span>
+          </div>
+
+          <nav className={styles.links}>
+            <Link href="/about">About</Link>
+            <Link href="/contact">相談</Link>
+            <Link href="/members">会員</Link>
+          </nav>
+        </div>
+
+        <section className={styles.hero}>
+          <p className={styles.kicker}>FOR ATHLETES WHO LACK ENVIRONMENT</p>
+          <h1 className={styles.title}>
+            強くなるための“身体の構造”を学ぶ。
+            <br />
+            フォームを教えるのではなく、
+            <br />
+            フォームを自分で評価できる力を育てる。
           </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+
+          <p className={styles.lead}>
+            OSAは技術指導ではありません。
+            <br />
+            勝ちは狙う。けれど結果に依存しない。
+            <br />
+            強くなるための条件を理解し、自分で伸びる人になる。
           </p>
+
+          <div className={styles.ctaRow}>
+            <Link className={styles.ctaPrimary} href="/about">
+              OSAについて読む
+            </Link>
+            <Link className={styles.ctaSecondary} href="/contact">
+              相談する
+            </Link>
+          </div>
+
+          <div className={styles.meta}>
+            <div className={styles.metaItem}>
+              <span className={styles.metaLabel}>対象</span>
+              <span className={styles.metaValue}>競技横断（部活全般）</span>
+            </div>
+            <div className={styles.metaItem}>
+              <span className={styles.metaLabel}>形式</span>
+              <span className={styles.metaValue}>オンライン / 少人数運用</span>
+            </div>
+            <div className={styles.metaItem}>
+              <span className={styles.metaLabel}>入口</span>
+              <span className={styles.metaValue}>文章・動画 → オンライン面談</span>
+            </div>
+          </div>
+        </section>
+      </header>
+
+      <section className={styles.section}>
+        <h2 className={styles.h2}>OSAで起きる変化（1年）</h2>
+        <div className={styles.grid}>
+          <div className={styles.card}>
+            <p className={styles.cardTitle}>自分で評価できる</p>
+            <p className={styles.cardBody}>
+              調子の良し悪しを“運”にしない。崩れた理由が言葉になる。
+            </p>
+          </div>
+          <div className={styles.card}>
+            <p className={styles.cardTitle}>1人練習の質が上がる</p>
+            <p className={styles.cardBody}>
+              コーチがいなくても、修正→実行→評価のサイクルが回る。
+            </p>
+          </div>
+          <div className={styles.card}>
+            <p className={styles.cardTitle}>再現性が上がる</p>
+            <p className={styles.cardBody}>
+              良い動きの条件が整理され、試合で崩れにくくなる。
+            </p>
+          </div>
+          <div className={styles.card}>
+            <p className={styles.cardTitle}>強くなり続ける</p>
+            <p className={styles.cardBody}>
+              筋トレ・栄養・OSAメソッドを“原理”で理解し、伸びが止まりにくい。
+            </p>
+          </div>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+      </section>
+
+      <section className={styles.section}>
+        <h2 className={styles.h2}>流れ</h2>
+        <ol className={styles.steps}>
+          <li>
+            <span className={styles.stepNum}>01</span>
+            <div className={styles.stepText}>
+              <p className={styles.stepTitle}>まずは読む / 見る</p>
+              <p className={styles.stepBody}>
+                Aboutで思想を確認。無料の文章・動画で空気を掴む。
+              </p>
+            </div>
+          </li>
+          <li>
+            <span className={styles.stepNum}>02</span>
+            <div className={styles.stepText}>
+              <p className={styles.stepTitle}>オンラインで話す</p>
+              <p className={styles.stepBody}>
+                現状と目標を整理。必要な方向性だけを短く決める（15〜30分）。
+              </p>
+            </div>
+          </li>
+          <li>
+            <span className={styles.stepNum}>03</span>
+            <div className={styles.stepText}>
+              <p className={styles.stepTitle}>会員ページで回す</p>
+              <p className={styles.stepBody}>
+                理論 → 実践 → 評価 → 振り返り。自分で伸びる構造を作る。
+              </p>
+            </div>
+          </li>
+        </ol>
+
+        <div className={styles.ctaRowBottom}>
+          <Link className={styles.ctaPrimary} href="/contact">
+            相談する
+          </Link>
+          <Link className={styles.ctaGhost} href="/members">
+            会員ページへ
+          </Link>
         </div>
-      </main>
-    </div>
+      </section>
+
+      <footer className={styles.footer}>
+        <p className={styles.footerText}>
+          © {new Date().getFullYear()} OSA / ORIGIN STRENGTH ARTS
+        </p>
+      </footer>
+    </main>
   );
 }
