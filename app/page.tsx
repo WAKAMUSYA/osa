@@ -24,19 +24,19 @@ export default function Home() {
         <section className={styles.hero}>
           <p className={styles.kicker}>FOR ATHLETES WHO LACK ENVIRONMENT</p>
           <h1 className={styles.title}>
-            強くなるための“身体の構造”を学ぶ。
+            強くなるための構造を学ぶ。
             <br />
-            フォームを教えるのではなく、
+            教わるだけでなく、
             <br />
-            フォームを自分で評価できる力を育てる。
+            技術を評価し、創り出せる人になる。
           </h1>
 
           <p className={styles.lead}>
-            OSAは技術指導ではありません。
+            目先のフォームではなく、
             <br />
-            勝ちは狙う。けれど結果に依存しない。
+            力が通る条件を学ぶ。
             <br />
-            強くなるための条件を理解し、自分で伸びる人になる。
+            自分で評価し、修正し、積み重ねられる人になる。
           </p>
 
           <div className={styles.ctaRow}>
@@ -55,7 +55,7 @@ export default function Home() {
             </div>
             <div className={styles.metaItem}>
               <span className={styles.metaLabel}>形式</span>
-              <span className={styles.metaValue}>オンライン / 少人数運用</span>
+              <span className={styles.metaValue}>オンライン / 自主練習</span>
             </div>
             <div className={styles.metaItem}>
               <span className={styles.metaLabel}>入口</span>
@@ -89,8 +89,53 @@ export default function Home() {
           <div className={styles.card}>
             <p className={styles.cardTitle}>強くなり続ける</p>
             <p className={styles.cardBody}>
-              筋トレ・栄養・OSAメソッドを“原理”で理解し、伸びが止まりにくい。
+              筋トレ・栄養・OSAメソッドを“原理”で理解し、積み重ねることができる。
             </p>
+          </div>
+        </div>
+      </section>
+
+            <section className={styles.section}>
+        <h2 className={styles.h2}>メッセージ</h2>
+
+        <div className={styles.messageBox}>
+          <p className={styles.messageTitle}>その夢を叶えてほしい</p>
+
+          <p className={styles.messageBody}>
+            プロになりたい。優勝したい。勝ちたい。
+            <br />
+            夢がある。情熱もある。けれど、環境に恵まれていない。
+            <br />
+            <br />
+            それでも、あなたは環境を言い訳にしない。
+            <br />
+            これからも調べて、試して、積み重ねていくはずだ。
+            <br />
+            <br />
+            その努力が、遠回りにならないように。
+            <br />
+            夢が叶う確率を、少しでも上げるために。
+            <br />
+            <br />
+            強くなるための条件を整理し、
+            <br/>
+            自分で評価できる力を持てば、
+            <br/>
+            成長は加速する。
+            <br/>
+            <br/>
+            あなたが、自分の力で伸びていけるように。
+            <br/>
+            それがOSAの役割です。
+          </p>
+
+          <div className={styles.messageCta}>
+            <Link className={styles.ctaSecondary} href="/about">
+              OSAの背景を読む
+            </Link>
+            <Link className={styles.ctaPrimary} href="/contact">
+              相談する
+            </Link>
           </div>
         </div>
       </section>

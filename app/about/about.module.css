@@ -144,3 +144,13 @@
   font-size: 12px;
   opacity: 0.7;
 }
+
+.quote {
+  margin-top: 14px;
+  padding: 14px 14px;
+  border-left: 3px solid rgba(0, 0, 0, 0.18);
+  background: rgba(0, 0, 0, 0.03);
+  border-radius: 10px;
+  line-height: 1.9;
+  opacity: 0.9;
+}

@@ -18,10 +18,11 @@ export default function AboutPage() {
         </header>
 
         <section className={styles.section}>
-          <h2 className={styles.h2}>OSAは、技術指導ではありません。</h2>
+          <h2 className={styles.h2}>OSAは、技術を“教える”場所ではありません。</h2>
 
           <p className={styles.lead}>
-            OSAは、技術を教える場所ではありません。
+            OSAは、答えを与える場所ではありません。
+            <br />
             フォームを細かく修正する場所でもありません。
           </p>
 
@@ -33,6 +34,7 @@ export default function AboutPage() {
 
           <p>
             その日の出来不出来に振り回されず、
+            <br />
             なぜ良いのか、なぜ崩れたのかを理解できる状態を目指します。
           </p>
         </section>
@@ -66,12 +68,22 @@ export default function AboutPage() {
           </p>
 
           <p>OSAは、そのための場所です。</p>
+          <p className={styles.quote}>
+            一流は説明しない。あるいは、説明できない。
+            <br />
+            理論を理解しても、できるとは限らない。
+            <br />
+            それでも確かに存在する、本人の感覚としての「何か」がある。
+            <br />
+            OSAは、その“何か”を言葉と再現性に変えるための場所です。
+          </p>
+
         </section>
 
         <div className={styles.divider} />
 
         <section className={styles.section}>
-          <h2 className={styles.h2}>勝ちは狙います</h2>
+          <h2 className={styles.h2}>勝利は、構造の先にあります</h2>
 
           <p>OSAは、勝利を否定しません。</p>
 
@@ -81,21 +93,19 @@ export default function AboutPage() {
             <li>県大会を突破したい。</li>
           </ul>
 
-          <p>その思いは尊い。</p>
+          <p>その願いは、まっすぐで尊い。</p>
 
           <p>
-            ただし、勝利は確率論です。
+            だからこそ、運や勢いだけに頼らない。
             <br />
-            その日の結果だけで自分を評価するのは不安定です。
+            強くなる条件を整理し、崩れた理由を言葉にできるようにする。
           </p>
 
           <p>
-            OSAが目指すのは、
+            勝利は、近道ではなく積み重ねの先にある。
             <br />
-            勝ちを狙いながら、勝ちに依存しない状態をつくること。
+            OSAは、その「積み重ねが効く構造」を整えます。
           </p>
-
-          <p>そのために、強くなる構造を整えます。</p>
         </section>
 
         <div className={styles.divider} />
