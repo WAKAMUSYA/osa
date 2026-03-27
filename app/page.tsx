@@ -1,77 +1,189 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import styles from "./page.module.css";
+
+export const metadata: Metadata = {
+  title: "OSA | ORIGIN STRENGTH ARTS",
+  description:
+    "OSAは、強くなるための構造を学ぶ場所です。フォームを教わるだけでなく、自分で評価し、修正し、積み重ねられる人になるための無料コンテンツを公開しています。",
+};
 
 export default function Home() {
   return (
     <main className={styles.page}>
-      <header className={styles.header}>
-        <div className={styles.nav}>
-          <div className={styles.brand}>
-            <span className={styles.logo} aria-hidden="true" />
-            <span className={styles.brandText}>
-              <span className={styles.brandName}>OSA</span>
-              <span className={styles.brandSub}>ORIGIN STRENGTH ARTS</span>
-            </span>
-          </div>
-
-          <nav className={styles.links}>
-            <Link href="/about">About</Link>
-            <Link href="/contact">相談</Link>
-            <Link href="/members">会員</Link>
-          </nav>
-        </div>
-
         <section className={styles.hero}>
           <p className={styles.kicker}>FOR ATHLETES WHO LACK ENVIRONMENT</p>
+
           <h1 className={styles.title}>
-            強くなるための構造を学ぶ。
+            感覚を開き、理論を知れば
             <br />
-            教わるだけでなく、
-            <br />
-            技術を評価し、創り出せる人になる。
+            パフォーマンスは高まり続ける
           </h1>
 
           <p className={styles.lead}>
-            目先のフォームではなく、
+            努力しているのに、何が正しいか分からない人へ
             <br />
-            力が通る条件を学ぶ。
+            強くなるための構造を学べば、
             <br />
-            自分で評価し、修正し、積み重ねられる人になる。
+            自分で評価し、修正できる人になれる。
           </p>
 
           <div className={styles.ctaRow}>
-            <Link className={styles.ctaPrimary} href="/about">
-              OSAについて読む
+            <Link className={styles.ctaPrimary} href="/contents">
+              無料コンテンツを見る
             </Link>
-            <Link className={styles.ctaSecondary} href="/contact">
-              相談する
+            <Link className={styles.ctaSecondary} href="/about">
+              OSAについて読む
             </Link>
           </div>
 
           <div className={styles.meta}>
             <div className={styles.metaItem}>
-              <span className={styles.metaLabel}>対象</span>
-              <span className={styles.metaValue}>競技横断（部活全般）</span>
+              <span className={styles.metaLabel}>STEP1</span>
+              <span className={styles.metaValue}>感覚を開き、理論を学ぶ</span>
             </div>
             <div className={styles.metaItem}>
-              <span className={styles.metaLabel}>形式</span>
-              <span className={styles.metaValue}>オンライン / 自主練習</span>
+              <span className={styles.metaLabel}>STEP2</span>
+              <span className={styles.metaValue}>繰り返す。頭と体で身につける。</span>
             </div>
             <div className={styles.metaItem}>
-              <span className={styles.metaLabel}>入口</span>
-              <span className={styles.metaValue}>文章・動画 → オンライン面談</span>
+              <span className={styles.metaLabel}>STEP3</span>
+              <span className={styles.metaValue}>パフォーマンスを高め続ける</span>
             </div>
           </div>
         </section>
-      </header>
 
       <section className={styles.section}>
-        <h2 className={styles.h2}>OSAで起きる変化（1年）</h2>
+        <h2 className={styles.h2}>メッセージ</h2>
+
+        <div className={styles.messageBox}>
+          <p className={styles.messageTitle}>その努力が、遠回りだけで終わらないように</p>
+
+          <p className={styles.messageBody}>
+            プロになりたい。優勝したい。勝ちたい。
+            <br />
+            夢がある。情熱もある。けれど、環境に恵まれていない。
+            <br />
+            <br />
+            それでも、あなたは環境を言い訳にせず、
+            <br />
+            調べて、試して、積み重ねていくはずです。
+            <br />
+            <br />
+            だからこそ、
+            <br />
+            その努力が遠回りだけで終わらないように。
+            <br />
+            何が良くて、何が崩れているのかを自分で見られるように。
+            <br />
+            <br />
+            視覚がない人に、空を教えるとき、
+            <br />
+            言葉だけでは伝わりきりません。
+            <br />
+            <br />
+            正しい説明はできるけれど、
+            <br />
+            それだけでは「空そのもの」にはならない。
+            <br />
+            <br />
+            それと同じように、
+            <br />
+            動きも、理論だけでは届かない部分があります。
+            <br />
+            <br />
+            だからOSAでは、
+            <br />
+            理論と感覚に触れながら、理解を深めていきます。
+            <br />
+            <br />
+            強くなるための条件を整理し、
+            <br />
+            自分で評価し、修正し、積み重ねられる人になる。
+            <br />
+            <br />
+            それがOSAの役割です。
+          </p>
+
+          <div className={styles.messageCta}>
+            <Link className={styles.ctaPrimary} href="/contents">
+              無料コンテンツを見る
+            </Link>
+            <Link className={styles.ctaSecondary} href="/about">
+              OSAの背景を読む
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      <section className={styles.section}>
+        <h2 className={styles.h2}>まずはここから</h2>
+        <p className={styles.sectionLead}>
+          OSAでは、強くなるための構造を4つの層に分けて整理しています。
+          <br />
+          まずは無料公開している第1層から触れてみてください。
+        </p>
+
+        <div className={styles.grid}>
+          <div className={styles.card}>
+            <p className={styles.cardTitle}>第1層｜感覚に触れる</p>
+            <p className={styles.cardBody}>
+              努力しているのに伸びない。なぜ力むと崩れるのか。
+              <br />
+              まずは感覚の入口に触れていきます。
+            </p>
+            <div className={styles.cardCta}>
+              <Link className={styles.ctaPrimary} href="/contents/layer1">
+                第1層を見る
+              </Link>
+            </div>
+          </div>
+
+          <div className={styles.card}>
+            <p className={styles.cardTitle}>第2層｜評価できるようになる</p>
+            <p className={styles.cardBody}>
+              何が良くて、何がズレているのか。
+              <br />
+              動きを見るための軸を整理していきます。
+            </p>
+            <p className={styles.note}>準備中</p>
+          </div>
+
+          <div className={styles.card}>
+            <p className={styles.cardTitle}>第3層｜修正できるようになる</p>
+            <p className={styles.cardBody}>
+              崩れたときに何を戻すのか。
+              <br />
+              自分で修正するための流れを学びます。
+            </p>
+            <p className={styles.note}>準備中</p>
+          </div>
+
+          <div className={styles.card}>
+            <p className={styles.cardTitle}>第4層｜競技に応用する</p>
+            <p className={styles.cardBody}>
+              押す、投げる、走る、打つ。
+              <br />
+              競技の中で構造をどう使うかを扱います。
+            </p>
+            <p className={styles.note}>準備中</p>
+          </div>
+        </div>
+
+        <div className={styles.ctaRowBottom}>
+          <Link className={styles.ctaGhost} href="/contents">
+            コンテンツ一覧へ
+          </Link>
+        </div>
+      </section>
+
+      <section className={styles.section}>
+        <h2 className={styles.h2}>OSAで起きる変化</h2>
         <div className={styles.grid}>
           <div className={styles.card}>
             <p className={styles.cardTitle}>自分で評価できる</p>
             <p className={styles.cardBody}>
-              調子の良し悪しを“運”にしない。崩れた理由が言葉になる。
+              調子の良し悪しを“運”にしない。崩れた理由が少しずつ言葉になる。
             </p>
           </div>
           <div className={styles.card}>
@@ -83,59 +195,14 @@ export default function Home() {
           <div className={styles.card}>
             <p className={styles.cardTitle}>再現性が上がる</p>
             <p className={styles.cardBody}>
-              良い動きの条件が整理され、試合で崩れにくくなる。
+              良い動きの条件が整理され、試合や本番で崩れにくくなる。
             </p>
           </div>
           <div className={styles.card}>
             <p className={styles.cardTitle}>強くなり続ける</p>
             <p className={styles.cardBody}>
-              筋トレ・栄養・OSAメソッドを“原理”で理解し、積み重ねることができる。
+              筋トレ・栄養・技術を“原理”で理解し、積み重ねることができる。
             </p>
-          </div>
-        </div>
-      </section>
-
-            <section className={styles.section}>
-        <h2 className={styles.h2}>メッセージ</h2>
-
-        <div className={styles.messageBox}>
-          <p className={styles.messageTitle}>その夢を叶えてほしい</p>
-
-          <p className={styles.messageBody}>
-            プロになりたい。優勝したい。勝ちたい。
-            <br />
-            夢がある。情熱もある。けれど、環境に恵まれていない。
-            <br />
-            <br />
-            それでも、あなたは環境を言い訳にしない。
-            <br />
-            これからも調べて、試して、積み重ねていくはずだ。
-            <br />
-            <br />
-            その努力が、遠回りにならないように。
-            <br />
-            夢が叶う確率を、少しでも上げるために。
-            <br />
-            <br />
-            強くなるための条件を整理し、
-            <br/>
-            自分で評価できる力を持てば、
-            <br/>
-            成長は加速する。
-            <br/>
-            <br/>
-            あなたが、自分の力で伸びていけるように。
-            <br/>
-            それがOSAの役割です。
-          </p>
-
-          <div className={styles.messageCta}>
-            <Link className={styles.ctaSecondary} href="/about">
-              OSAの背景を読む
-            </Link>
-            <Link className={styles.ctaPrimary} href="/contact">
-              相談する
-            </Link>
           </div>
         </div>
       </section>
@@ -148,36 +215,36 @@ export default function Home() {
             <div className={styles.stepText}>
               <p className={styles.stepTitle}>まずは読む / 見る</p>
               <p className={styles.stepBody}>
-                Aboutで思想を確認。無料の文章・動画で空気を掴む。
+                無料コンテンツで、OSAの考え方と感覚の入口に触れる。
               </p>
             </div>
           </li>
           <li>
             <span className={styles.stepNum}>02</span>
             <div className={styles.stepText}>
-              <p className={styles.stepTitle}>オンラインで話す</p>
+              <p className={styles.stepTitle}>必要なら相談する</p>
               <p className={styles.stepBody}>
-                現状と目標を整理。必要な方向性だけを短く決める（15〜30分）。
+                現状と目標を整理し、今どこから始めるべきかを確認する。
               </p>
             </div>
           </li>
           <li>
             <span className={styles.stepNum}>03</span>
             <div className={styles.stepText}>
-              <p className={styles.stepTitle}>会員ページで回す</p>
+              <p className={styles.stepTitle}>自分で積み重ねていく</p>
               <p className={styles.stepBody}>
-                理論 → 実践 → 評価 → 振り返り。自分で伸びる構造を作る。
+                理論 → 実践 → 評価 → 修正。自分で伸びる構造を作る。
               </p>
             </div>
           </li>
         </ol>
 
         <div className={styles.ctaRowBottom}>
-          <Link className={styles.ctaPrimary} href="/contact">
-            相談する
+          <Link className={styles.ctaPrimary} href="/contents">
+            無料コンテンツを見る
           </Link>
-          <Link className={styles.ctaGhost} href="/members">
-            会員ページへ
+          <Link className={styles.ctaSecondary} href="/contact">
+            相談する
           </Link>
         </div>
       </section>

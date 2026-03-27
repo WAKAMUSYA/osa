@@ -27,7 +27,7 @@ export default function AboutPage() {
           </p>
 
           <p>
-            強くなるための“身体の構造”を学ぶ場所です。
+            強くなるための“力の本質・構造”を学ぶ場所です。
             <br />
             フォームを教えるのではなく、フォームを自分で評価できる力を育てます。
           </p>
@@ -90,7 +90,7 @@ export default function AboutPage() {
           <ul className={styles.list}>
             <li>甲子園に行きたい。</li>
             <li>インターハイに出たい。</li>
-            <li>県大会を突破したい。</li>
+            <li>プロになりたい。</li>
           </ul>
 
           <p>その願いは、まっすぐで尊い。</p>
@@ -152,43 +152,53 @@ export default function AboutPage() {
         <div className={styles.divider} />
 
         <section className={styles.section}>
-          <h2 className={styles.h2}>OSAが向いている人</h2>
-          <ul className={styles.list}>
-            <li>本気で上手くなりたい人</li>
-            <li>環境が足りないと感じている人</li>
-            <li>言い訳をしたくない人</li>
-            <li>自分で考えられるようになりたい人</li>
-          </ul>
-        </section>
-
-        <section className={styles.section}>
-          <h2 className={styles.h2}>OSAが向いていない人</h2>
-          <ul className={styles.list}>
-            <li>楽して結果だけ欲しい人</li>
-            <li>指示がないと動けない人</li>
-            <li>一時的な変化だけを求める人</li>
-          </ul>
-        </section>
-
-        <div className={styles.divider} />
-
-        <section className={styles.section}>
           <h2 className={styles.h2}>最後に</h2>
+            <p>
+              OSAは、魔法のように一瞬で強くなる場所ではありません。
+              <br />
+              すべての悩みに、すぐ答えを出せる場所でもありません。
+            </p>
 
-          <p>環境がないことは、不利かもしれません。</p>
-          <p>
-            でも、本気なら構造は学べます。
-            <br />
-            OSAは、強くなりたい人のための場所です。
-          </p>
+            <p>
+              けれど、
+              <br />
+              何が良くて、何が崩れているのか。
+              <br />
+              なぜ伸びて、なぜ止まるのか。
+              <br />
+              それを少しずつ自分で見られるようになる場所ではありたいと思っています。
+            </p>
 
-          <p className={styles.closing}>
-            勝ちを狙いながら、
-            <br />
-            自分で伸びる人になる。
-            <br />
-            その準備を、ここで行います。
-          </p>
+            <p>
+              僕自身、あの頃に欲しかったのは、
+              <br />
+              「もっと頑張れ」という言葉ではなく、
+              <br />
+              自分の努力を正しい方向に積み重ねるための視点でした。
+            </p>
+
+            <p>
+              もし今、
+              <br />
+              頑張っているのに伸びない感覚があるなら。
+              <br />
+              何を信じて積み重ねればいいのか分からないなら。
+              <br />
+              ここにある考え方や実践が、その手がかりになれば嬉しいです。
+            </p>
+
+            <p>
+              OSAは、答えを与えるための場所ではなく、
+              <br />
+              自分で見て、自分で修正し、自分で伸びていくための場所です。
+            </p>
+
+            <p>
+              その夢が、遠回りだけで終わらないように。
+              <br />
+              OSAは、そのための場所でありたいと思っています。
+            </p>
+
 
           <div className={styles.ctaRow}>
             <a className={styles.ctaPrimary} href="/contact">
@@ -199,9 +209,7 @@ export default function AboutPage() {
             </a>
           </div>
 
-          <p className={styles.note}>
-            ※会員ページはパスワード制（少人数運用）を想定しています。
-          </p>
+
         </section>
       </article>
     </main>

@@ -71,14 +71,15 @@
 .hero {
   max-width: 980px;
   margin: 0 auto;
-  padding: 54px 0 58px;
+  padding: 54px 20px 58px;
 }
 
 .kicker {
-  letter-spacing: 0.16em;
+  letter-spacing: 0.08em;
   font-size: 12px;
-  opacity: 0.7;
+  opacity: 0.72;
   margin: 0 0 14px;
+  line-height: 1.7;
 }
 
 .title {
@@ -108,12 +109,13 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  height: 44px;
-  padding: 0 16px;
+  min-height: 44px;
+  padding: 10px 16px;
   border-radius: 999px;
   text-decoration: none;
   font-size: 14px;
   letter-spacing: 0.02em;
+  line-height: 1.2;
 }
 
 .ctaPrimary {
@@ -166,6 +168,7 @@
   margin-top: 6px;
   font-size: 13px;
   opacity: 0.9;
+  line-height: 1.7;
 }
 
 .section {
@@ -185,6 +188,15 @@
   margin: 0 auto 18px;
   font-size: 18px;
   letter-spacing: 0.02em;
+  line-height: 1.5;
+}
+
+.sectionLead {
+  max-width: 980px;
+  margin: 0 auto 18px;
+  opacity: 0.86;
+  line-height: 1.9;
+  font-size: 14px;
 }
 
 .grid {
@@ -206,17 +218,27 @@
   border-radius: 16px;
   padding: 16px;
   background: rgba(0, 0, 0, 0.02);
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
 }
 
 .cardTitle {
   margin: 0 0 8px;
   font-weight: 700;
+  line-height: 1.6;
 }
 
 .cardBody {
   margin: 0;
   opacity: 0.85;
   line-height: 1.8;
+  font-size: 14px;
+}
+
+.cardCta {
+  margin-top: auto;
+  padding-top: 16px;
 }
 
 .steps {
@@ -255,12 +277,14 @@
 .stepTitle {
   margin: 0;
   font-weight: 700;
+  line-height: 1.6;
 }
 
 .stepBody {
   margin: 6px 0 0;
   opacity: 0.85;
   line-height: 1.8;
+  font-size: 14px;
 }
 
 .ctaRowBottom {
@@ -297,6 +321,7 @@
   font-weight: 700;
   font-size: 16px;
   letter-spacing: 0.02em;
+  line-height: 1.6;
 }
 
 .messageBody {
@@ -312,4 +337,44 @@
   display: flex;
   gap: 10px;
   flex-wrap: wrap;
+}
+
+.note {
+  margin: 12px 0 0;
+  font-size: 13px;
+  opacity: 0.62;
+  line-height: 1.7;
+}
+
+@media (max-width: 819px) {
+  .header {
+    padding: 22px 16px 0;
+  }
+
+  .section {
+    padding: 46px 16px;
+  }
+
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hero {
+    padding: 42px 0 48px;
+  }
+
+  .title {
+    font-size: clamp(28px, 9vw, 40px);
+  }
+
+  .steps li {
+    grid-template-columns: 1fr;
+  }
+
+  .stepNum {
+    width: 38px;
+    height: 38px;
+    font-size: 12px;
+  }
 }
