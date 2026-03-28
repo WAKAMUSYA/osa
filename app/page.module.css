@@ -361,11 +361,17 @@
   }
 
   .hero {
-    padding: 42px 0 48px;
+    padding: 42px 16px 48px;
   }
 
   .title {
     font-size: clamp(28px, 9vw, 40px);
+    line-height: 1.24;
+  }
+
+  .lead {
+    font-size: 14px;
+    line-height: 1.9;
   }
 
   .steps li {
@@ -377,4 +383,28 @@
     height: 38px;
     font-size: 12px;
   }
+
+  .kicker {
+    font-size: 11px;
+    letter-spacing: 0.05em;
+    line-height: 1.7;
+  }
+
+  .ctaRow {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .ctaPrimary,
+  .ctaSecondary {
+    width: 100%;
+  }
+
+  .meta {
+    margin-top: 22px;
+  }
+
+  .metaItem {
+    padding: 14px 12px;
+  }  
 }
