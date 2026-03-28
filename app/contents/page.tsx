@@ -48,7 +48,11 @@ export default function ContentsPage() {
               <br />
               動きを見るための軸を整理していきます。
             </p>
-            <p className={styles.note}>準備中</p>
+            <div className={styles.cardFooter}>
+              <Link className={styles.ctaPrimary} href="/contents/layer2">
+                第2層を見る
+              </Link>
+            </div>
           </article>
 
           <article className={styles.card}>
@@ -59,7 +63,11 @@ export default function ContentsPage() {
               <br />
               自分で修正するための流れを学びます。
             </p>
-            <p className={styles.note}>準備中</p>
+            <div className={styles.cardFooter}>
+              <Link className={styles.ctaPrimary} href="/contents/layer3">
+                第3層を見る
+              </Link>
+            </div>
           </article>
 
           <article className={styles.card}>
@@ -70,7 +78,11 @@ export default function ContentsPage() {
               <br />
               競技の中で構造をどう使うかを扱います。
             </p>
-            <p className={styles.note}>準備中</p>
+            <div className={styles.cardFooter}>
+              <Link className={styles.ctaPrimary} href="/contents/layer4">
+                第4層を見る
+              </Link>
+            </div>
           </article>
         </section>
 

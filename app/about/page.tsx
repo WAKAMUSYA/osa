@@ -201,11 +201,11 @@ export default function AboutPage() {
 
 
           <div className={styles.ctaRow}>
-            <a className={styles.ctaPrimary} href="/contact">
-              相談する
+            <a className={styles.ctaPrimary} href="/contents">
+              コンテンツを見る
             </a>
-            <a className={styles.ctaSecondary} href="/members">
-              会員ページ（準備中）
+            <a className={styles.ctaSecondary} href="/contact">
+              相談する
             </a>
           </div>
 

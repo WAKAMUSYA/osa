@@ -1074,10 +1074,15 @@ export default function Layer1Page() {
         </section>
 
         <div className={styles.bottomRow}>
-          <Link className={styles.ctaGhost} href="/contents">
+        <Link className={styles.ctaPrimary} href="/contents/layer2">
+            第2層へ進む
+        </Link>
+
+        <Link className={styles.ctaSecondary} href="/contents">
             コンテンツ一覧へ戻る
-          </Link>
+        </Link>
         </div>
+
       </article>
     </main>
   );
