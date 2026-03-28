@@ -30,7 +30,8 @@
 .subtitle {
   margin: 10px 0 0;
   font-size: 14px;
-  opacity: 0.75;
+  opacity: 0.78;
+  line-height: 1.9;
 }
 
 .section {
@@ -47,6 +48,14 @@
 .h2 {
   font-size: 18px;
   margin: 0 0 12px;
+  line-height: 1.5;
+}
+
+.body {
+  margin: 0 0 14px;
+  font-size: 14px;
+  line-height: 1.9;
+  opacity: 0.9;
 }
 
 .steps {
@@ -56,6 +65,14 @@
 
 .steps li {
   margin: 8px 0;
+  line-height: 1.8;
+}
+
+.formLead {
+  margin: 0 0 14px;
+  font-size: 14px;
+  line-height: 1.9;
+  opacity: 0.82;
 }
 
 .form {
@@ -78,6 +95,7 @@
   padding: 12px 12px;
   font-size: 14px;
   outline: none;
+  background: #ffffff;
 }
 
 .input:focus,
@@ -94,8 +112,8 @@
 }
 
 .button {
-  height: 44px;
-  padding: 0 16px;
+  min-height: 44px;
+  padding: 10px 16px;
   border-radius: 999px;
   border: none;
   background: #111111;
@@ -118,5 +136,23 @@
 .note {
   margin: 8px 0 0;
   font-size: 12px;
+  line-height: 1.7;
   opacity: 0.7;
+}
+
+@media (max-width: 600px) {
+  .page {
+    padding: 56px 16px;
+  }
+
+  .row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .button,
+  .link {
+    width: 100%;
+    text-align: center;
+  }
 }
