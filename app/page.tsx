@@ -234,7 +234,7 @@ export default function Home() {
           <li>
             <span className={styles.stepNum}>02</span>
             <div className={styles.stepText}>
-              <p className={styles.stepTitle}>自分d積み重ねていく</p>
+              <p className={styles.stepTitle}>自分で積み重ねていく</p>
               <p className={styles.stepBody}>
                 理論 → 実践 → 評価 → 修正。自分で伸びる構造を作る。
               </p>
