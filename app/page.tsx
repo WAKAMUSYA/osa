@@ -30,7 +30,7 @@ export default function Home() {
 
           <div className={styles.ctaRow}>
             <Link className={styles.ctaPrimary} href="/contents">
-              無料コンテンツを見る
+              コンテンツを見る
             </Link>
             <Link className={styles.ctaSecondary} href="/about">
               OSAについて読む
@@ -121,7 +121,7 @@ export default function Home() {
         <p className={styles.sectionLead}>
           OSAでは、強くなるための構造を4つの層に分けて整理しています。
           <br />
-          まずは無料公開している第1層から触れてみてください。
+          まずは第1層から触れてみてください。
         </p>
 
         <div className={styles.grid}>
@@ -146,7 +146,11 @@ export default function Home() {
               <br />
               動きを見るための軸を整理していきます。
             </p>
-            <p className={styles.note}>準備中</p>
+            <div className={styles.cardCta}>
+              <Link className={styles.ctaPrimary} href="/contents/layer2">
+                第2層を見る
+              </Link>
+            </div>
           </div>
 
           <div className={styles.card}>
@@ -156,7 +160,11 @@ export default function Home() {
               <br />
               自分で修正するための流れを学びます。
             </p>
-            <p className={styles.note}>準備中</p>
+            <div className={styles.cardCta}>
+              <Link className={styles.ctaPrimary} href="/contents/layer3">
+                第3層を見る
+              </Link>
+            </div>
           </div>
 
           <div className={styles.card}>
@@ -166,7 +174,11 @@ export default function Home() {
               <br />
               競技の中で構造をどう使うかを扱います。
             </p>
-            <p className={styles.note}>準備中</p>
+            <div className={styles.cardCta}>
+              <Link className={styles.ctaPrimary} href="/contents/layer4">
+                第4層を見る
+              </Link>
+            </div>
           </div>
         </div>
 
@@ -215,25 +227,25 @@ export default function Home() {
             <div className={styles.stepText}>
               <p className={styles.stepTitle}>まずは読む / 見る</p>
               <p className={styles.stepBody}>
-                無料コンテンツで、OSAの考え方と感覚の入口に触れる。
+                コンテンツで、OSAの考え方と感覚の入口に触れる。
               </p>
             </div>
           </li>
           <li>
             <span className={styles.stepNum}>02</span>
             <div className={styles.stepText}>
-              <p className={styles.stepTitle}>必要なら相談する</p>
+              <p className={styles.stepTitle}>自分d積み重ねていく</p>
               <p className={styles.stepBody}>
-                現状と目標を整理し、今どこから始めるべきかを確認する。
+                理論 → 実践 → 評価 → 修正。自分で伸びる構造を作る。
               </p>
             </div>
           </li>
           <li>
             <span className={styles.stepNum}>03</span>
             <div className={styles.stepText}>
-              <p className={styles.stepTitle}>自分で積み重ねていく</p>
+              <p className={styles.stepTitle}>必要なら相談する</p>
               <p className={styles.stepBody}>
-                理論 → 実践 → 評価 → 修正。自分で伸びる構造を作る。
+                1人でやるのが難しいときは、相談も受け付けています。
               </p>
             </div>
           </li>
@@ -241,7 +253,7 @@ export default function Home() {
 
         <div className={styles.ctaRowBottom}>
           <Link className={styles.ctaPrimary} href="/contents">
-            無料コンテンツを見る
+            コンテンツを見る
           </Link>
           <Link className={styles.ctaSecondary} href="/contact">
             相談する
