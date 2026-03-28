@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Image from "next/image";
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -32,7 +34,12 @@ export default function RootLayout({
         <header className="siteHeader">
           <div className="siteHeaderInner">
             <Link href="/" className="siteBrand">
-              <span className="siteLogo" aria-hidden="true" />
+              <Image
+                src="/osalogo.png" // 文字なしロゴ
+                alt="OSA logo"
+                width={28}
+                height={28}
+              />
               <span className="siteBrandText">
                 <span className="siteBrandName">OSA</span>
                 <span className="siteBrandSub">ORIGIN STRENGTH ARTS</span>
