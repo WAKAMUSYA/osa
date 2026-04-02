@@ -107,7 +107,7 @@ export default function Home() {
 
           <div className={styles.messageCta}>
             <Link className={styles.ctaPrimary} href="/contents">
-              無料コンテンツを見る
+              コンテンツを見る
             </Link>
             <Link className={styles.ctaSecondary} href="/about">
               OSAの背景を読む
